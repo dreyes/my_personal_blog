@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&family=Zilla+Slab:ital,wght@1,300&display=swap');
+
+body{
+  background: #EAEBED;
+  margin: 0;
+}
+
+.container{
+  display: grid;
+  height: auto;
+  
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 88px 1fr;
+  grid-template-areas: 
+  "hd"
+  "main"
+  "ft";
+}
+.box{
+  border: 1px solid red;
+}
+.header{
+  grid-area: hd;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 88px 1fr;
+  grid-template-areas: 
+  "sm"
+  "lg"
+  "mm";
+  background: #2C303A;
+  padding: 32px;
+}
+#socialMedia{
+  grid-area: sm;
+  width: auto;
+  height: auto;
+}
+#mainLogo{
+  display: flex;
+  grid-area: lg;
+  justify-self: center;
+}
+.footer{
+  grid-area: ft;
+}
+.content{
+  grid-area: main;
+}
+
+/* 
+
+This will be applied to content
+
+@media(min-width:600px) and (max-width:1100px){
+  .container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "main main main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+  }
+}
+@media (min-width:1101px){
+  .container{
+    grid-template-columns: auto;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "main mian main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+  }
+}
+*/
