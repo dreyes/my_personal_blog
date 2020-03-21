@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&family=Zilla+Slab:ital,wght@1,300&display=swap');
+/* ============== Sitewide ============== */
 
 body{
   background: #EAEBED;
-  margin: 0;
+  margin: 0px;
 }
 
 .container{
@@ -10,49 +10,213 @@ body{
   height: auto;
   
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 88px 1fr;
+  grid-template-rows: 1fr 450px 88px 1fr;
   grid-template-areas: 
   "hd"
+  "sh"
   "main"
   "ft";
 }
+/* Temporary...delete afterwards */
 .box{
   border: 1px solid red;
 }
+
+/* ============== Header Grids =============== */
+
 .header{
   grid-area: hd;
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50px 88px 1fr;
+  grid-template-rows: auto 1fr;
   grid-template-areas: 
-  "sm"
-  "lg"
+  "ml"
   "mm";
   background: #2C303A;
-  padding: 32px;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
-#socialMedia{
-  grid-area: sm;
-  width: auto;
-  height: auto;
-}
-#mainLogo{
+
+#mainHeader{
+  grid-area: ml;
+  height: 88;
   display: flex;
-  grid-area: lg;
-  justify-self: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.footer{
-  grid-area: ft;
+
+#mainMenu{
+  grid-area: mm;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
 }
+
+  /* ------------ Social Media and Search Box ----------- */
+
+#socialMedia{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-self: left;
+  width: 200px;
+  height: 50px;
+}
+
+#linkedinLogo{
+  transition: background-image 0.2s ease-in-out;
+  background-image: url('/images/icon_linkedin_circle.png');
+  width: 32px;
+  height: 32px;
+}
+
+#linkedinLogo:hover{
+  background-image: url('/images/icon_linkedin_circle_hover.png');
+}
+
+#instagramLogo{
+  transition: background-image 0.2s ease-in-out;
+  background-image: url('/images/icon_instagram_circle.png');
+  width: 32px;
+  height: 32px;
+}
+
+#instagramLogo:hover{
+  background-image: url('/images/icon_instagram_circle_hover.png');
+}
+
+#twitterLogo{
+  transition: background-image 0.2s ease-in-out;
+  background-image: url('/images/icon_twitter_circle.png');
+  width: 32px;
+  height: 32px;
+}
+
+#twitterLogo:hover{
+  background-image: url('/images/icon_twitter_circle_hover.png');
+}
+
+#searchBox{
+  width: 0px;
+  height: 0px;
+}
+
+ /* ------------ Logo ----------- */
+
+#logo{
+  width: 240px;
+  height: 88px;
+}
+
+ /* ------------ Navigation Menu ----------- */
+
+.menuItem{
+  display: inline-block;
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 8px;
+}
+
+.menuItem:hover{
+  transition: color 0.2s ease-in-out;
+  color: #fff;
+}
+
+/* ============== Subheader Grids =============== */
+
+.subHeader{
+  grid-area: sh;
+  display: flex;
+  flex-direction: column;
+  background: #1E1F26;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.test{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* ============== Content Grids =============== */
+
 .content{
   grid-area: main;
 }
 
-/* 
+/* ============== Footer Grids =============== */
 
-This will be applied to content
+.footer{
+  grid-area: ft;
+}
 
+/* ============== Media Queries =============== */
+
+@media(min-width:700px) and (max-width:1100px){
+  .header{
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .subHeader{
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  #mainHeader{
+    grid-area: ml;
+    height: 88;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #socialMedia{
+    justify-content: flex-start;
+  }
+  #socialMedia > a{
+    margin-right: 16px;
+  }
+  #searchBox{
+    width: 200px;
+    height: 50px;
+  }
+}
+
+@media (min-width:1101px){
+  .header{
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .subHeader{
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  #mainHeader{
+    grid-area: ml;
+    height: 88;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #socialMedia{
+    justify-content: flex-start;
+  }
+  #socialMedia > a{
+    margin-right: 16px;
+  }
+  #searchBox{
+    width: 200px;
+    height: 50px;
+  }
+}
+/*
 @media(min-width:600px) and (max-width:1100px){
   .container{
     display: grid;

@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&family=Zilla+Slab:ital,wght@1,300&display=swap');
+
+.menuTitle{
+  /* Main Menu Item */
+  font-family: Sen;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+
+  display: inline-block;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #00D1FF;
+}
+
+#subheaderTitle{
+
+  font-family: Sen;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+
+  display: flex;
+  align-items: center;
+
+  color: #fff;
+}
+
+#subheaderSubtitle{
+
+  font-family: Sen;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+
+  display: flex;
+  align-items: center;
+
+  color: #fff;
+}
+
+h1{
+  /* Header 1 */
+
+  font-family: Sen;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+
+  display: flex;
+  align-items: center;
+
+  color: #fff;
+}
+
+h2{
+  /* Header 2 */
+
+  font-family: Sen;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+
+  display: flex;
+  align-items: center;
+
+  color: #fff;
+}
+
+h3{
+  /* Header 3 */
+
+  font-family: Sen;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  
+  display: flex;
+  align-items: center;
+
+  color: #1E1F26;
+}
+
+h4{
+  /* Header 4 */
+  font-family: Sen;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #1E1F26;
+}
+
+.bodyLarge{
+  /* Body Large */
+
+  font-family: Sen;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+
+  display: flex;
+  align-items: center;
+
+  color: #1E1F26;
+}
+
+.bodyMedium{
+  /* Body Medium */
+
+  font-family: Sen;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+
+  display: flex;
+  align-items: center;
+
+  color: #1E1F26;
+}
+
+.bodySmall{
+  font-family: Sen;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+
+  display: flex;
+  align-items: center;
+
+  color: #1E1F26;
+}
+
+.bodyXS{
+  /* Body XS */
+
+  font-family: Sen;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+
+  display: flex;
+  align-items: center;
+
+  color: #1E1F26;
+}
+
+blockquote{
+  /* Quote */
+
+  font-family: Zilla Slab;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+
+  display: flex;
+  align-items: center;
+
+  color: #1E1F26;
+}
+
+.greenFont{
+  color: #4CC675;
+}
+
+#yellowHighlight{
+  background-color: #EEE82C;
+}
