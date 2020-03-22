@@ -1,3 +1,9 @@
+/* ============== Imports ============== */
+
+@import "typography.css";
+@import "content.css";
+
+
 /* ============== Sitewide ============== */
 
 body{
@@ -10,7 +16,7 @@ body{
   height: auto;
   
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 450px 88px 1fr;
+  grid-template-rows: 1fr 450px auto auto;
   grid-template-areas: 
   "hd"
   "sh"
@@ -138,21 +144,16 @@ body{
   padding-right: 16px;
 }
 
-.test{
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-/* ============== Content Grids =============== */
-
-.content{
-  grid-area: main;
-}
-
 /* ============== Footer Grids =============== */
 
 .footer{
+  display: flex;
+  flex-direction: column-reverse;
   grid-area: ft;
+  background: #2C303A;
+  height: 160px;
+  margin-top: -80px;
+  z-index: -1;
 }
 
 /* ============== Media Queries =============== */
@@ -216,24 +217,3 @@ body{
     height: 50px;
   }
 }
-/*
-@media(min-width:600px) and (max-width:1100px){
-  .container{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-areas: 
-    "hd hd hd hd hd hd hd hd"
-    "main main main main main main main main"
-    "ft ft ft ft ft ft ft ft";
-  }
-}
-@media (min-width:1101px){
-  .container{
-    grid-template-columns: auto;
-    grid-template-areas:
-    "hd hd hd hd hd hd hd hd"
-    "main mian main main main main main main"
-    "ft ft ft ft ft ft ft ft";
-  }
-}
-*/

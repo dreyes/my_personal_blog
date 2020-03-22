@@ -1,0 +1,207 @@
+/* ============== Content Grids =============== */
+
+.content{
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: auto;
+  grid-template-areas: "cards";
+  justify-content: center;
+  margin-top: -132px;
+}
+
+.cardGrid{
+  grid-area: cards;
+  display: grid;
+  grid-template-columns: 320px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "fr cd fr";
+  justify-content: center;
+  align-content: flex-start;
+  grid-gap: 32px;
+}
+
+/* ============== Blog Post Card Grid =============== */
+
+.postCard{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 16px 232px 154px 32px;
+  grid-template-areas: 
+  "tg"
+  "pi"
+  "pp"
+  "rm";
+  width: 304px;
+  height: 464px;
+  border-radius: 10px;
+  background-color: #fff;
+  grid-gap: 8px;
+  justify-content: center;
+}
+
+.tags{
+  display: flex;
+  grid-area: tg;
+  margin-top: -16px;
+  height: 32px;
+}
+
+.simpleTag{
+  background-color: #9D50E4;
+  border-radius: 5px;
+  align-content: center;
+  justify-content: center;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.simpleTag h3{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: #fff;
+}
+
+.postImage{
+  display: flex;
+  grid-area: pi;
+  border-radius: 10px;
+  height: 232px;
+  width: 288px;
+}
+
+.postPreview{
+  display: flex;
+  grid-area: pp;
+  height: 154px;
+  width: 288px;
+}
+
+.postPreview h2{
+  color: #1E1F26;
+}
+
+.readMore{
+  display: flex;
+  flex-direction: row-reverse;
+  grid-area: rm;
+}
+
+.readMoreButton{
+  display: flex;
+  background-color: #00D1FF;
+  border-radius: 5px;
+  align-content: center;
+  justify-content: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-decoration: none;
+}
+
+.readMore h4{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: #fff;
+}
+
+.readMoreButton:hover{
+  transition: background-color 0.2s ease-in-out;
+  background-color: #4CC675;
+}
+
+/* ---------------- Blog Post Individual Cards --------------- */
+
+#one .postImage{
+  background-image: url(/images/placeholder_1.jpg);
+  background-size: contain;
+} 
+
+#two .postImage{
+  background-image: url(/images/placeholder_2.jpg);
+  background-size: contain;
+} 
+
+#three .postImage{
+  background-image: url(/images/placeholder_1.jpg);
+  background-size: contain;
+} 
+
+#four .postImage{
+  background-image: url(/images/placeholder_2.jpg);
+  background-size: contain;
+} 
+
+#five .postImage{
+  background-image: url(/images/placeholder_1.jpg);
+  background-size: contain;
+} 
+
+#six .postImage{
+  background-image: url(/images/placeholder_2.jpg);
+  background-size: contain;
+} 
+
+@media(min-width:700px) and (max-width:1100px){
+  .cardGrid{
+    grid-area: cards;
+    display: grid;
+    grid-template-columns: repeat(2, 320px);
+    grid-template-rows: autp;
+    grid-template-areas: 
+    "topLeft topRight"
+    "midLeft midRight"
+    "bottomLeft bottomRight";
+    align-content: flex-start;
+  }
+  #one{
+    grid-area: topLeft;
+  }
+  #two{
+    grid-area: topRight;
+  }
+  #three{
+    grid-area: midLeft;
+  }
+  #four{
+    grid-area: midRight;
+  }
+  #five{
+    grid-area: bottomLeft;
+  }
+  #six{
+    grid-area: bottomRight;
+  }
+}
+@media (min-width:1101px){
+  .content{
+    margin-top: -220px;
+  }
+  .cardGrid{
+    grid-area: cards;
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "topLeft topCenter topRight"
+    "bottomLeft bottomCenter bottomRight";
+  }
+  #one{
+    grid-area: topLeft;
+  }
+  #two{
+    grid-area: topCenter;
+  }
+  #three{
+    grid-area: topRight;
+  }
+  #four{
+    grid-area: bottomLeft;
+  }
+  #five{
+    grid-area: bottomCenter;
+  }
+  #six{
+    grid-area: bottomRight;
+  }
+}
