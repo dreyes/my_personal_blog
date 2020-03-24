@@ -1,12 +1,9 @@
-body{
-  z-index: 2;
+body {
+  margin: 0;
+  background-color: var(--just-another-white);
 }
 
-.postBody{
-  background-color: #fff;
-}
-
-.postContent{
+.post-content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto 320px auto auto auto auto;
@@ -18,142 +15,172 @@ body{
   "post post post about"
   "nav nav nav about"
   "related related related about";
+
   margin-left: 128px;
   margin-right: 128px;
   z-index: 1;
 }
 
-.blogTitle{
+.blog-title {
   grid-area: title;
+  color: var(--not-so-black);
 }
 
-.blogInfo{
-  display: flex;
+.blog-title > h1 {
+  color: var(--not-so-black);
+}
+
+.blog-info {
   grid-area: info;
+  display: flex;
   justify-content: space-between;
 }
 
-.date{
+.date {
   align-self: center;
 }
 
-.shareSocial{
+.share-social {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   justify-self: center;
+  align-content: center;
+
   width: auto;
   height: 40px;
-  align-content: center;
 }
 
-.shareSocial > a{
+.share-social > a {
   margin-left: 16px;
   align-self: center;
 }
 
-.shrink:hover{
+.shrink:hover {
   transform: scale(0.95);
 }
 
-#shareFacebook{
+.share-facebook {
   transition: background-image 0.2s ease-in-out;
   background-image: url('/images/facebook_circle_color.svg');
   width: 32px;
   height: 32px;
 }
 
-#sharePinterest{
+.share-pinterest {
   transition: background-image 0.2s ease-in-out;
   background-image: url('/images/pinterest_circle_color.svg');
   width: 32px;
   height: 32px;
 }
 
-#shareLinkedin{
+.share-linkedin {
   transition: background-image 0.2s ease-in-out;
   background-image: url('/images/linkedin_circle_color.svg');
   width: 32px;
   height: 32px;
 }
 
-#shareEmail{
+.share-email {
   transition: background-image 0.2s ease-in-out;
   background-image: url('/images/email_circle_color.svg');
   width: 32px;
   height: 32px;
 }
 
-#shareTwitter{
+.share-twitter {
   transition: background-image 0.2s ease-in-out;
   background-image: url('/images/twitter_circle_color.svg');
   width: 32px;
   height: 32px;
 }
 
-.postImage{
-  display: flex;
+.post-image {
   grid-area: image;
+  display: flex;
+
   background-image: url(/images/placeholder_1.jpg);
   background-size: cover;
   border-radius: 10px;
 }
 
-.imageCaption{
+.image-caption {
   grid-area: cap;
 }
 
-.blogPost{
+.image-caption > p {
+  color: var(--very-deep-blue);
+}
+
+.blog-post {
   grid-area: post;
+
   margin-right: 16px;
 }
 
-.blogNavigation{
-  display: flex;
+.blog-navigation {
   grid-area: nav;
+  display: flex;
   justify-content: space-between;
+
   margin-right: 16px;
   margin-bottom: 16px;
 }
 
-.aboutAuthor{
+.post-exception {
+  visibility: hidden;
+}
+
+.related-posts {
+  grid-area: related;
+  margin-right: 16px;
+  background-color: var(--just-another-white);
+  border-radius: 10px;
+  padding: 32px;
+}
+
+.about-author {
   display: flex;
   flex-direction: column;
   grid-area: about;
   border-radius: 10px;
   height: auto;
-  background-color: #1E1F26;
+  background-color: var(--not-so-black);
   align-items: center;
 }
 
-.aboutTitle{
+.about-title {
   margin-top: 16px;
 }
 
-.authorImage{
+.about-title > h3 {
+  color: var(--just-another-white);
+}
+
+.author-image {
   background-image: url(/images/donaldo_reyes.jpg);
   border-radius: 50%;
   height: 160px;
   width: 160px;
   background-size: cover;
-  border: 4px solid #205284;
+  border: 4px solid var(--blue-gray);
   margin: 32px;
 }
 
-.authorBio{
+.author-name > h4 {
+  color: var(--just-another-white);
+}
+
+.author-company > h4 {
+  color: var(--just-another-white);
+}
+
+.author-bio {
   margin-left: 32px;
   margin-right: 32px;
   text-align: center;
 }
 
-.relatedPosts{
-  grid-area: related;
-  margin-right: 16px;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 32px;
-}
-
-#postException{
-  visibility: hidden;
+.author-bio > p {
+  color: var(--just-another-white);
 }

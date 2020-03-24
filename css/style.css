@@ -1,21 +1,14 @@
 /* ============== Imports ============== */
 
-@import "typography.css";
-@import "content.css";
-@import "blog-post.css";
-@import "colors.css";
+@import url(typography.css);
+@import url(content.css);
+@import url(blog-post.css);
+@import url(colors.css);
 
 /* ============== Sitewide ============== */
 
-body{
-  background: #EAEBED;
-  margin: 0;
-}
-
-.container{
+.main-body {
   display: grid;
-  height: auto;
-  
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 450px auto auto;
   grid-template-areas: 
@@ -23,213 +16,225 @@ body{
   "sh"
   "main"
   "ft";
+
+  height: auto;
+  background: var(--light-gray);
+  margin: 0;
 }
+
 /* Temporary...delete afterwards */
-.box{
+.box {
   border: 1px solid red;
 }
 
 /* ============== Header Grids =============== */
 
-.header{
+header {
   grid-area: hd;
-
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto auto;
   grid-template-areas: 
-  "ml"
+  "mh"
   "mm";
-  background: #2C303A;
+
+  background: var(--very-dark-blue);
   padding-top: 16px;
   padding-left: 16px;
   padding-right: 16px;
 }
 
-#mainHeader{
-  grid-area: ml;
-  height: 88;
+.main-header {
+  grid-area: mh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  height: 88;
 }
 
-#mainMenu{
+.main-menu {
   grid-area: mm;
-  padding: 0;
   display: flex;
   justify-content: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu > ul {
   margin: 0;
 }
 
   /* ------------ Social Media and Search Box ----------- */
 
-#socialMedia{
+.social-media {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   justify-self: left;
+
   width: 200px;
   height: 50px;
 }
 
-#linkedinLogo{
+.linkedin-icon {
   transition: background-image 0.2s ease-in-out;
   background-image: url('/images/icon_linkedin_circle.png');
   width: 32px;
   height: 32px;
 }
 
-#linkedinLogo:hover{
+.linkedin-icon:hover {
   background-image: url('/images/icon_linkedin_circle_hover.png');
 }
 
-#instagramLogo{
+.instagram-icon {
   transition: background-image 0.2s ease-in-out;
   background-image: url('/images/icon_instagram_circle.png');
   width: 32px;
   height: 32px;
 }
 
-#instagramLogo:hover{
+.instagram-icon:hover {
   background-image: url('/images/icon_instagram_circle_hover.png');
 }
 
-#twitterLogo{
+.twitter-icon {
   transition: background-image 0.2s ease-in-out;
   background-image: url('/images/icon_twitter_circle.png');
   width: 32px;
   height: 32px;
 }
 
-#twitterLogo:hover{
+.twitter-icon:hover {
   background-image: url('/images/icon_twitter_circle_hover.png');
 }
 
-#searchBox{
+.search-box {
   width: 0;
   height: 0;
 }
 
  /* ------------ Logo ----------- */
 
-#logo{
+.logo {
   width: 240px;
   height: 88px;
 }
 
  /* ------------ Navigation Menu ----------- */
 
-.menuItem{
+.menu-item {
   display: inline-block;
+
   margin-top: 16px;
   margin-left: 16px;
   margin-right: 16px;
   margin-bottom: 8px;
-
   text-decoration: none;
 }
 
-.menuItem:hover{
+.menu-item:hover {
   transition: color 0.2s ease-in-out;
-  color: #fff;
+  color: var(--just-another-white);
 }
 
 /* ============== Subheader Grids =============== */
 
-.subHeader{
+.sub-header {
   grid-area: sh;
   display: flex;
   flex-direction: column;
-  background: #1E1F26;
+
+  background: var(--not-so-black);
   padding-left: 16px;
   padding-right: 16px;
 }
 
-/* ============== Footer Grids =============== */
-
-.footer{
-  display: inline-flex;
-  flex-direction: row-reverse;
-  align-items: flex-end;
-  grid-area: ft;
-  background: #2C303A;
-  height: 160px;
-  margin-top: -80px;
-  z-index: -2;
+.subheader-title > h1 {
+  color: var(--just-another-white);
 }
 
-footer{
+/* ============== Footer Grids =============== */
+
+footer {
+  grid-area: ft;
   display: inline-flex;
   flex-direction: row-reverse;
   align-items: flex-end;
-  grid-area: ft;
-  background: #2C303A;
+  
+  background: var(--very-dark-blue);
   height: 160px;
   width: 100%;
   margin-top: -80px;
+  /* used to send the background to the back of the z axis */
   position: relative;
   z-index: -2;
 }
 
 /* ============== Media Queries =============== */
 
-@media(min-width:700px) and (max-width:1100px){
-  .header{
+@media(min-width:700px) and (max-width:1100px) {
+  .header {
     padding-top: 32px;
     padding-left: 32px;
     padding-right: 32px;
   }
-  .subHeader{
+
+  .sub-header {
     padding-left: 32px;
     padding-right: 32px;
   }
-  #mainHeader{
-    grid-area: ml;
-    height: 88;
-    display: flex;
+
+  .main-header {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
   }
-  #socialMedia{
+
+  .social-media {
     justify-content: flex-start;
   }
-  #socialMedia > a{
+
+  .social-media > a {
     margin-right: 16px;
   }
-  #searchBox{
+
+  .search-box {
     width: 200px;
     height: 50px;
   }
 }
 
-@media (min-width:1101px){
-  .header{
+@media (min-width:1101px) {
+  .header {
     padding-top: 32px;
     padding-left: 32px;
     padding-right: 32px;
   }
-  .subHeader{
+  
+  .sub-header {
     padding-left: 32px;
     padding-right: 32px;
   }
-  #mainHeader{
-    grid-area: ml;
-    height: 88;
-    display: flex;
+
+  .main-header {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
   }
-  #socialMedia{
+
+  .social-media {
     justify-content: flex-start;
   }
-  #socialMedia > a{
+
+  .social-media > a {
     margin-right: 16px;
   }
-  #searchBox{
+
+  .search-box {
     width: 200px;
     height: 50px;
   }
