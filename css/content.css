@@ -63,7 +63,7 @@
   color: #fff;
 }
 
-.postImage{
+.previewImage{
   display: flex;
   grid-area: pi;
   border-radius: 10px;
@@ -88,56 +88,75 @@
   grid-area: rm;
 }
 
-.readMoreButton{
+.btn{
   display: flex;
-  background-color: #00D1FF;
   border-radius: 5px;
   align-content: center;
   justify-content: center;
   padding-left: 8px;
   padding-right: 8px;
   text-decoration: none;
+  height: 32px;
 }
 
-.readMore h4{
+.blue-btn{
+  background-color: #00D1FF;
+}
+
+.blue-btn h4{
   margin-block-start: 0;
   margin-block-end: 0;
   color: #fff;
 }
 
-.readMoreButton:hover{
+.blue-btn:hover{
   transition: background-color 0.2s ease-in-out;
   background-color: #4CC675;
 }
 
+.yellow-btn{
+  background-color: #EEE82C;
+}
+
+.yellow-btn h4{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: #2C303A;
+}
+
+.yellow-btn:hover{
+  transition: background-color 0.2s ease-in-out;
+  background-color: #fff;
+}
+
 /* ---------------- Blog Post Individual Cards --------------- */
 
-#one .postImage{
+#one .previewImage{
   background-image: url(/images/placeholder_1.jpg);
   background-size: contain;
 } 
 
-#two .postImage{
+#two .previewImage{
   background-image: url(/images/placeholder_2.jpg);
   background-size: contain;
 } 
 
-#three .postImage{
+#three .previewImage{
   background-image: url(/images/placeholder_1.jpg);
   background-size: contain;
 } 
 
-#four .postImage{
+#four .previewImage{
   background-image: url(/images/placeholder_2.jpg);
   background-size: contain;
 } 
 
-#five .postImage{
+#five .previewImage{
   background-image: url(/images/placeholder_1.jpg);
   background-size: contain;
 } 
 
-#six .postImage{
+#six .previewImage{
   background-image: url(/images/placeholder_2.jpg);
   background-size: contain;
 } 

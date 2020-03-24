@@ -2,13 +2,14 @@
 
 @import "typography.css";
 @import "content.css";
-
+@import "blog-post.css";
+@import "colors.css";
 
 /* ============== Sitewide ============== */
 
 body{
   background: #EAEBED;
-  margin: 0px;
+  margin: 0;
 }
 
 .container{
@@ -56,10 +57,10 @@ body{
 
 #mainMenu{
   grid-area: mm;
-  padding: 0px;
+  padding: 0;
   display: flex;
   justify-content: center;
-  margin: 0px;
+  margin: 0;
 }
 
   /* ------------ Social Media and Search Box ----------- */
@@ -107,8 +108,8 @@ body{
 }
 
 #searchBox{
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
 }
 
  /* ------------ Logo ----------- */
@@ -126,6 +127,8 @@ body{
   margin-left: 16px;
   margin-right: 16px;
   margin-bottom: 8px;
+
+  text-decoration: none;
 }
 
 .menuItem:hover{
@@ -147,13 +150,27 @@ body{
 /* ============== Footer Grids =============== */
 
 .footer{
-  display: flex;
-  flex-direction: column-reverse;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
   grid-area: ft;
   background: #2C303A;
   height: 160px;
   margin-top: -80px;
-  z-index: -1;
+  z-index: -2;
+}
+
+footer{
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  grid-area: ft;
+  background: #2C303A;
+  height: 160px;
+  width: 100%;
+  margin-top: -80px;
+  position: relative;
+  z-index: -2;
 }
 
 /* ============== Media Queries =============== */

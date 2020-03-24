@@ -1,0 +1,159 @@
+body{
+  z-index: 2;
+}
+
+.postBody{
+  background-color: #fff;
+}
+
+.postContent{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto 320px auto auto auto auto;
+  grid-template-areas:
+  "title title title title"
+  "info info info info"
+  "image image image image"
+  "cap cap cap cap"
+  "post post post about"
+  "nav nav nav about"
+  "related related related about";
+  margin-left: 128px;
+  margin-right: 128px;
+  z-index: 1;
+}
+
+.blogTitle{
+  grid-area: title;
+}
+
+.blogInfo{
+  display: flex;
+  grid-area: info;
+  justify-content: space-between;
+}
+
+.date{
+  align-self: center;
+}
+
+.shareSocial{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-self: center;
+  width: auto;
+  height: 40px;
+  align-content: center;
+}
+
+.shareSocial > a{
+  margin-left: 16px;
+  align-self: center;
+}
+
+.shrink:hover{
+  transform: scale(0.95);
+}
+
+#shareFacebook{
+  transition: background-image 0.2s ease-in-out;
+  background-image: url('/images/facebook_circle_color.svg');
+  width: 32px;
+  height: 32px;
+}
+
+#sharePinterest{
+  transition: background-image 0.2s ease-in-out;
+  background-image: url('/images/pinterest_circle_color.svg');
+  width: 32px;
+  height: 32px;
+}
+
+#shareLinkedin{
+  transition: background-image 0.2s ease-in-out;
+  background-image: url('/images/linkedin_circle_color.svg');
+  width: 32px;
+  height: 32px;
+}
+
+#shareEmail{
+  transition: background-image 0.2s ease-in-out;
+  background-image: url('/images/email_circle_color.svg');
+  width: 32px;
+  height: 32px;
+}
+
+#shareTwitter{
+  transition: background-image 0.2s ease-in-out;
+  background-image: url('/images/twitter_circle_color.svg');
+  width: 32px;
+  height: 32px;
+}
+
+.postImage{
+  display: flex;
+  grid-area: image;
+  background-image: url(/images/placeholder_1.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.imageCaption{
+  grid-area: cap;
+}
+
+.blogPost{
+  grid-area: post;
+  margin-right: 16px;
+}
+
+.blogNavigation{
+  display: flex;
+  grid-area: nav;
+  justify-content: space-between;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.aboutAuthor{
+  display: flex;
+  flex-direction: column;
+  grid-area: about;
+  border-radius: 10px;
+  height: auto;
+  background-color: #1E1F26;
+  align-items: center;
+}
+
+.aboutTitle{
+  margin-top: 16px;
+}
+
+.authorImage{
+  background-image: url(/images/donaldo_reyes.jpg);
+  border-radius: 50%;
+  height: 160px;
+  width: 160px;
+  background-size: cover;
+  border: 4px solid #205284;
+  margin: 32px;
+}
+
+.authorBio{
+  margin-left: 32px;
+  margin-right: 32px;
+  text-align: center;
+}
+
+.relatedPosts{
+  grid-area: related;
+  margin-right: 16px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 32px;
+}
+
+#postException{
+  visibility: hidden;
+}
