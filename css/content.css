@@ -75,6 +75,7 @@
 
 .post-preview h2 {
   color: var(--not-so-black);
+  text-align: center;
 }
 
 .read-more {
@@ -132,23 +133,23 @@
 }
 
 .card-one .preview-image {
-  background-image: url(../images/placeholder_1.jpg);
+  background-image: url(../images/productivity.jpg);
 } 
 
 .card-two .preview-image {
-  background-image: url(../images/placeholder_2.jpg);
+  background-image: url(../images/cinque_terre.jpg);
 } 
 
 .card-three .preview-image {
-  background-image: url(../images/placeholder_1.jpg);
+  background-image: url(../images/kids_vr.jpg);
 } 
 
 .card-four .preview-image {
-  background-image: url(../images/placeholder_2.jpg);
+  background-image: url(../images/css_programming.jpg);
 } 
 
 .card-five .preview-image {
-  background-image: url(../images/placeholder_1.jpg);
+  background-image: url(../images/travel_and_work.jpg);
 } 
 
 .card-six .preview-image {

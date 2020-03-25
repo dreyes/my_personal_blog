@@ -111,6 +111,26 @@ body {
   background-image: url(../images/typewriter.jpg);
 }
 
+.blog-2 {
+  background-image: url(../images/travel_and_work.jpg);
+}
+
+.blog-3 {
+  background-image: url(../images/css_programming.jpg);
+}
+
+.blog-4 {
+  background-image: url(../images/kids_vr.jpg);
+}
+
+.blog-5 {
+  background-image: url(../images/cinque_terre.jpg);
+}
+
+.blog-6 {
+  background-image: url(../images/productivity.jpg);
+}
+
 .image-caption {
   grid-area: cap;
   color: var(--blue-gray);
@@ -270,7 +290,7 @@ body {
   }
 
   .blog-post {
-    margin-right: 16px;
+    margin-right: 32px;
   }
 
   .author-image {
