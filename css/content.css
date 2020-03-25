@@ -132,27 +132,27 @@
 }
 
 .card-one .preview-image {
-  background-image: url(images/placeholder_1.jpg);
+  background-image: url(./images/placeholder_1.jpg);
 } 
 
 .card-two .preview-image {
-  background-image: url(images/placeholder_2.jpg);
+  background-image: url(./images/placeholder_2.jpg);
 } 
 
 .card-three .preview-image {
-  background-image: url(images/placeholder_1.jpg);
+  background-image: url(./images/placeholder_1.jpg);
 } 
 
 .card-four .preview-image {
-  background-image: url(images/placeholder_2.jpg);
+  background-image: url(./images/placeholder_2.jpg);
 } 
 
 .card-five .preview-image {
-  background-image: url(images/placeholder_1.jpg);
+  background-image: url(./images/placeholder_1.jpg);
 } 
 
 .card-six .preview-image {
-  background-image: url(images/typewriter.jpg);
+  background-image: url(./images/typewriter.jpg);
 } 
 
 @media(min-width:700px) and (max-width:1100px) {
