@@ -15,8 +15,8 @@ body {
   "cap"
   "pic";
   justify-items: center;
-  margin-left: 128px;
-  margin-right: 128px;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 
 .my-photo {
@@ -66,4 +66,18 @@ body {
   background-position: center;
   border-radius: 10px;
   width: 100%;
+}
+
+@media(min-width:700px) and (max-width:1100px) {
+  .my-content {
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+}
+
+@media (min-width:1101px) {
+  .my-content {
+    margin-left: 128px;
+    margin-right: 128px;
+  }
 }

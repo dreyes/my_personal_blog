@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: var(--just-another-white);
+  width: 100vw;
 }
 
 .post-content {
