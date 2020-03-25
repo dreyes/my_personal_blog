@@ -64,35 +64,35 @@ body {
 
 .share-facebook {
   transition: background-image 0.2s ease-in-out;
-  background-image: url(./images/facebook_circle_color.svg);
+  background-image: url(../images/facebook_circle_color.svg);
   width: 32px;
   height: 32px;
 }
 
 .share-pinterest {
   transition: background-image 0.2s ease-in-out;
-  background-image: url(./images/pinterest_circle_color.svg);
+  background-image: url(../images/pinterest_circle_color.svg);
   width: 32px;
   height: 32px;
 }
 
 .share-linkedin {
   transition: background-image 0.2s ease-in-out;
-  background-image: url(./images/linkedin_circle_color.svg);
+  background-image: url(../images/linkedin_circle_color.svg);
   width: 32px;
   height: 32px;
 }
 
 .share-email {
   transition: background-image 0.2s ease-in-out;
-  background-image: url(./images/email_circle_color.svg);
+  background-image: url(../images/email_circle_color.svg);
   width: 32px;
   height: 32px;
 }
 
 .share-twitter {
   transition: background-image 0.2s ease-in-out;
-  background-image: url(./images/twitter_circle_color.svg);
+  background-image: url(../images/twitter_circle_color.svg);
   width: 32px;
   height: 32px;
 }
@@ -107,7 +107,7 @@ body {
 }
 
 .blog-1 {
-  background-image: url(./images/typewriter.jpg);
+  background-image: url(../images/typewriter.jpg);
 }
 
 .image-caption {
@@ -163,7 +163,7 @@ body {
 }
 
 .author-image {
-  background-image: url(./images/donaldo_reyes.jpg);
+  background-image: url(../images/donaldo_reyes.jpg);
   border-radius: 50%;
   height: 160px;
   width: 160px;

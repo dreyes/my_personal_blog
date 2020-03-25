@@ -86,35 +86,35 @@ header {
 
 .linkedin-icon {
   transition: background-image 0.2s ease-in-out;
-  background-image: url(./images/icon_linkedin_circle.png);
+  background-image: url(../images/icon_linkedin_circle.png);
   width: 32px;
   height: 32px;
 }
 
 .linkedin-icon:hover {
-  background-image: url(./images/icon_linkedin_circle_hover.png);
+  background-image: url(../images/icon_linkedin_circle_hover.png);
 }
 
 .instagram-icon {
   transition: background-image 0.2s ease-in-out;
-  background-image: url(./images/icon_instagram_circle.png);
+  background-image: url(../images/icon_instagram_circle.png);
   width: 32px;
   height: 32px;
 }
 
 .instagram-icon:hover {
-  background-image: url(./images/icon_instagram_circle_hover.png);
+  background-image: url(../images/icon_instagram_circle_hover.png);
 }
 
 .twitter-icon {
   transition: background-image 0.2s ease-in-out;
-  background-image: url(./images/icon_twitter_circle.png);
+  background-image: url(../images/icon_twitter_circle.png);
   width: 32px;
   height: 32px;
 }
 
 .twitter-icon:hover {
-  background-image: url(./images/icon_twitter_circle_hover.png);
+  background-image: url(../images/icon_twitter_circle_hover.png);
 }
 
 .search-box {
