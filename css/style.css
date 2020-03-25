@@ -1,0 +1,254 @@
+/* ============== Imports ============== */
+
+@import url(typography.css);
+@import url(content.css);
+@import url(blog-post.css);
+@import url(colors.css);
+@import url(my-story.css);
+@import url(design-system.css);
+
+/* ============== Sitewide ============== */
+
+.main-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 450px auto auto;
+  grid-template-areas: 
+  "hd"
+  "sh"
+  "main"
+  "ft";
+
+  height: auto;
+  background: var(--light-gray);
+  margin: 0;
+}
+
+/* Temporary...delete afterwards */
+.box {
+  border: 1px solid red;
+}
+
+/* ============== Header Grids =============== */
+
+header {
+  grid-area: hd;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+  "mh"
+  "mm";
+
+  background: var(--very-dark-blue);
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.main-header {
+  grid-area: mh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 88;
+}
+
+.main-menu {
+  grid-area: mm;
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+  /* ------------ Social Media and Search Box ----------- */
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-self: left;
+
+  width: 200px;
+  height: 50px;
+}
+
+.linkedin-icon {
+  transition: background-image 0.2s ease-in-out;
+  background-image: url('/images/icon_linkedin_circle.png');
+  width: 32px;
+  height: 32px;
+}
+
+.linkedin-icon:hover {
+  background-image: url('/images/icon_linkedin_circle_hover.png');
+}
+
+.instagram-icon {
+  transition: background-image 0.2s ease-in-out;
+  background-image: url('/images/icon_instagram_circle.png');
+  width: 32px;
+  height: 32px;
+}
+
+.instagram-icon:hover {
+  background-image: url('/images/icon_instagram_circle_hover.png');
+}
+
+.twitter-icon {
+  transition: background-image 0.2s ease-in-out;
+  background-image: url('/images/icon_twitter_circle.png');
+  width: 32px;
+  height: 32px;
+}
+
+.twitter-icon:hover {
+  background-image: url('/images/icon_twitter_circle_hover.png');
+}
+
+.search-box {
+  width: 0;
+  height: 0;
+}
+
+ /* ------------ Logo ----------- */
+
+.logo {
+  width: 240px;
+  height: 88px;
+}
+
+ /* ------------ Navigation Menu ----------- */
+
+.menu-item {
+  display: inline-block;
+
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+
+.menu-item:hover {
+  transition: color 0.2s ease-in-out;
+  color: var(--just-another-white);
+}
+
+/* ============== Subheader Grids =============== */
+
+.sub-header {
+  grid-area: sh;
+  display: flex;
+  flex-direction: column;
+
+  background: var(--not-so-black);
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.subheader-title > h1 {
+  color: var(--just-another-white);
+}
+
+/* ============== Footer Grids =============== */
+
+footer {
+  grid-area: ft;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  
+  background: var(--very-dark-blue);
+  height: 160px;
+  width: 100%;
+  margin-top: -80px;
+  /* used to send the background to the back of the z axis */
+  position: relative;
+  z-index: -2;
+}
+
+/* ============== Media Queries =============== */
+
+@media(min-width:700px) and (max-width:1100px) {
+  .header {
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .sub-header {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .main-menu > ul {
+    flex-direction: row;
+  }
+
+  .social-media {
+    justify-content: flex-start;
+  }
+
+  .social-media > a {
+    margin-right: 16px;
+  }
+
+  .search-box {
+    width: 200px;
+    height: 50px;
+  }
+}
+
+@media (min-width:1101px) {
+  .header {
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  
+  .sub-header {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .main-menu > ul {
+    flex-direction: row;
+  }
+
+  .social-media {
+    justify-content: flex-start;
+  }
+
+  .social-media > a {
+    margin-right: 16px;
+  }
+
+  .search-box {
+    width: 200px;
+    height: 50px;
+  }
+}

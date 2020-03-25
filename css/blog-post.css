@@ -1,0 +1,287 @@
+body {
+  margin: 0;
+  background-color: var(--just-another-white);
+}
+
+.post-content {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto 160px auto auto auto auto auto;
+  grid-template-areas:
+  "title"
+  "info"
+  "image"
+  "cap"
+  "post"
+  "nav"
+  "related"
+  "about";
+
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.blog-title {
+  grid-area: title;
+  color: var(--not-so-black);
+}
+
+.blog-title > h1 {
+  color: var(--not-so-black);
+}
+
+.blog-info {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.date {
+  align-self: left;
+}
+
+.share-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-self: center;
+  align-content: center;
+
+  width: auto;
+  height: 40px;
+}
+
+.share-social > a {
+  align-self: center;
+}
+
+.shrink:hover {
+  transform: scale(0.95);
+}
+
+.share-facebook {
+  transition: background-image 0.2s ease-in-out;
+  background-image: url('/images/facebook_circle_color.svg');
+  width: 32px;
+  height: 32px;
+}
+
+.share-pinterest {
+  transition: background-image 0.2s ease-in-out;
+  background-image: url('/images/pinterest_circle_color.svg');
+  width: 32px;
+  height: 32px;
+}
+
+.share-linkedin {
+  transition: background-image 0.2s ease-in-out;
+  background-image: url('/images/linkedin_circle_color.svg');
+  width: 32px;
+  height: 32px;
+}
+
+.share-email {
+  transition: background-image 0.2s ease-in-out;
+  background-image: url('/images/email_circle_color.svg');
+  width: 32px;
+  height: 32px;
+}
+
+.share-twitter {
+  transition: background-image 0.2s ease-in-out;
+  background-image: url('/images/twitter_circle_color.svg');
+  width: 32px;
+  height: 32px;
+}
+
+.post-image {
+  grid-area: image;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-top: 16px;
+}
+
+.blog-1 {
+  background-image: url(/images/typewriter.jpg);
+}
+
+.image-caption {
+  grid-area: cap;
+  color: var(--blue-gray);
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.image-caption > p {
+  color: var(--very-deep-blue);
+}
+
+.blog-post {
+  grid-area: post;
+}
+
+.blog-navigation {
+  grid-area: nav;
+  display: flex;
+  justify-content: space-between;
+
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.post-exception {
+  visibility: hidden;
+}
+
+.related-posts {
+  grid-area: related;
+  margin-right: 16px;
+  background-color: var(--just-another-white);
+  border-radius: 10px;
+  padding: 32px;
+}
+
+.about-author {
+  display: flex;
+  flex-direction: column;
+  grid-area: about;
+  border-radius: 10px;
+  height: auto;
+  background-color: var(--not-so-black);
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.about-title > h3 {
+  color: var(--just-another-white);
+}
+
+.author-image {
+  background-image: url(/images/donaldo_reyes.jpg);
+  border-radius: 50%;
+  height: 160px;
+  width: 160px;
+  background-size: cover;
+  border: 4px solid var(--blue-gray);
+  margin: 16px;
+}
+
+.author-name > h4 {
+  color: var(--just-another-white);
+}
+
+.author-company > h4 {
+  color: var(--just-another-white);
+}
+
+.author-bio {
+  margin-left: 16px;
+  margin-right: 16px;
+  text-align: center;
+}
+
+.author-bio > p {
+  color: var(--just-another-white);
+}
+
+/* ============== Media Queries =============== */
+
+@media(min-width:700px) and (max-width:1100px) {
+  .post-content {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto 320px auto auto auto auto;
+    grid-template-areas:
+    "title title title title"
+    "info info info info"
+    "image image image image"
+    "cap cap cap cap"
+    "post post post about"
+    "nav nav nav about"
+    "related related related about";
+  
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+
+  .blog-info {
+    flex-direction: row;
+  }
+
+  .share-social {
+    margin: 0px;
+  }
+
+  .share-social > a {
+    margin-left: 16px;
+  }
+
+  .blog-post {
+    margin-right: 16px;
+  }
+
+  .author-image {
+    margin: 32px;
+  }
+  
+  .author-bio {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .date {
+    align-self: center;
+  }
+}
+
+@media (min-width:1101px) {
+  .post-content {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto 320px auto auto auto auto;
+    grid-template-areas:
+    "title title title title"
+    "info info info info"
+    "image image image image"
+    "cap cap cap cap"
+    "post post post about"
+    "nav nav nav about"
+    "related related related about";
+  
+    margin-left: 128px;
+    margin-right: 128px;
+  }
+
+  .blog-info {
+    flex-direction: row;
+  }
+
+  .share-social {
+    margin: 0px;
+  }
+
+  .share-social > a {
+    margin-left: 16px;
+  }
+
+  .blog-post {
+    margin-right: 16px;
+  }
+
+  .author-image {
+    margin: 32px;
+  }
+  
+  .author-bio {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .date {
+    align-self: center;
+  }
+}
