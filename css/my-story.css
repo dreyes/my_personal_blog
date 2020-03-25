@@ -61,7 +61,7 @@ body {
   grid-area: pic;
   display: flex;
 
-  background-image: url('/images/donaldo_reyes_2.jpg');
+  background-image: url('images/donaldo_reyes_2.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 10px;
