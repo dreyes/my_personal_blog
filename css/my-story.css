@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  background-color: var(--just-another-white);
+}
+
+.my-content {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto 480px;
+  grid-template-areas:
+  "photo"
+  "info"
+  "title"
+  "story"
+  "cap"
+  "pic";
+  justify-items: center;
+  margin-left: 128px;
+  margin-right: 128px;
+}
+
+.my-photo {
+  grid-area: photo;
+  display: flex;
+  background-image: url(/images/donaldo_reyes.jpg);
+  background-size: cover;
+  border: 4px solid var(--blue-gray);
+  border-radius: 50%;
+  height: 240px;
+  width: 240px;
+  margin: 32px;
+}
+
+.my-info {
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-title {
+  grid-area: title;
+}
+
+.my-story {
+  grid-area: story;
+}
+
+.my-image-caption {
+  grid-area: cap;
+  justify-self: left;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.my-image-caption > p {
+  color: var(--blue-gray);
+}
+
+.my-image {
+  grid-area: pic;
+  display: flex;
+
+  background-image: url(/images/donaldo_reyes_2.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  width: 100%;
+}
+
+/* .about-author {
+  display: flex;
+  flex-direction: column;
+  grid-area: about;
+  border-radius: 10px;
+  height: auto;
+  background-color: var(--not-so-black);
+  align-items: center;
+} */

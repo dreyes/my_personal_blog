@@ -114,10 +114,7 @@ h4 {
   font-weight: normal;
   font-size: 24px;
   line-height: 30px;
-
-  display: flex;
   align-items: center;
-
   color: var(--not-so-black);
 }
 
@@ -129,10 +126,7 @@ h4 {
   font-weight: normal;
   font-size: 18px;
   line-height: 22px;
-
-  display: flex;
   align-items: center;
-
   color: var(--not-so-black);
 }
 
@@ -142,42 +136,36 @@ h4 {
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-
-  display: flex;
   align-items: center;
-
   color: var(--not-so-black);
 }
 
 .body-xs {
   /* Body XS */
-
   font-family: Sen;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-
-  display: flex;
   align-items: center;
-
   margin-top: 8px;
   margin-bottom: 8px;
   color: var(--not-so-black);
 }
 
+.body-justify {
+  text-align: justify;
+}
+
 blockquote {
   /* Quote */
-
   font-family: Zilla Slab;
   font-style: italic;
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
-
   display: flex;
   align-items: center;
-
   color: var(--not-so-black);
 }
 

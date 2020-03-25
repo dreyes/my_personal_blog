@@ -18,14 +18,14 @@
 .post-card {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 16px 232px 154px 32px;
+  grid-template-rows: 16px 200px 154px 32px;
   grid-template-areas: 
   "tg"
   "pi"
   "pp"
   "rm";
   width: 304px;
-  height: 464px;
+  height: 432px;
   border-radius: 10px;
   background-color: var(--just-another-white);
   grid-gap: 8px;
@@ -62,7 +62,7 @@
   display: flex;
   grid-area: pi;
   border-radius: 10px;
-  height: 232px;
+  height: 200px;
   width: 288px;
 }
 
@@ -126,34 +126,33 @@
 
 /* ---------------- Blog Post Individual Cards --------------- */
 
+.preview-image {
+  background-size: cover;
+  background-position: center;
+}
+
 .card-one .preview-image {
   background-image: url(/images/placeholder_1.jpg);
-  background-size: contain;
 } 
 
 .card-two .preview-image {
   background-image: url(/images/placeholder_2.jpg);
-  background-size: contain;
 } 
 
 .card-three .preview-image {
   background-image: url(/images/placeholder_1.jpg);
-  background-size: contain;
 } 
 
 .card-four .preview-image {
   background-image: url(/images/placeholder_2.jpg);
-  background-size: contain;
 } 
 
 .card-five .preview-image {
   background-image: url(/images/placeholder_1.jpg);
-  background-size: contain;
 } 
 
 .card-six .preview-image {
-  background-image: url(/images/placeholder_2.jpg);
-  background-size: contain;
+  background-image: url(/images/typewriter.jpg);
 } 
 
 @media(min-width:700px) and (max-width:1100px) {
@@ -190,6 +189,7 @@
     grid-area: bottomRight;
   }
 }
+
 @media (min-width:1101px) {
   .card-grid {
     grid-template-columns: repeat(3, 320px);

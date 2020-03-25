@@ -4,6 +4,8 @@
 @import url(content.css);
 @import url(blog-post.css);
 @import url(colors.css);
+@import url(my-story.css);
+@import url(design-system.css);
 
 /* ============== Sitewide ============== */
 
@@ -64,6 +66,9 @@ header {
 }
 
 .main-menu > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
 }
 
@@ -194,6 +199,10 @@ footer {
     align-items: flex-start;
   }
 
+  .main-menu > ul {
+    flex-direction: row;
+  }
+
   .social-media {
     justify-content: flex-start;
   }
@@ -224,6 +233,10 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+  }
+
+  .main-menu > ul {
+    flex-direction: row;
   }
 
   .social-media {

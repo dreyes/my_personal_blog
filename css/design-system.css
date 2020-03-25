@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  background-color: var(--just-another-white);
+}
+
+.design-content {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+  "dt"
+  "explained";
+  justify-items: center;
+  margin-left: 128px;
+  margin-right: 128px;
+}
+
+.design-title {
+  grid-area: dt;
+}
+
+.design-explained {
+  grid-area: explained;
+  background-color: var(--just-another-white);
+  border-radius: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+}
+
+.figma {
+  display: flex;
+  border-style: none;
+  border-radius: 10px;
+  width: 384px;
+  height: 432px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+}
+
+@media(min-width:700px) and (max-width:1100px) {
+  .figma {
+    width: 448px;
+    height: 496px;
+  }
+}
+
+@media (min-width:1101px) {
+  .figma {
+    width: 720px;
+    height: 800px;
+  }
+}
