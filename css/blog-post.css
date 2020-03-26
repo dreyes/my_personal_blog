@@ -17,18 +17,11 @@ body {
   "nav"
   "related"
   "about";
-
-  margin-left: 16px;
-  margin-right: 16px;
+  margin: 0 16px;
 }
 
 .blog-title {
   grid-area: title;
-  color: var(--not-so-black);
-}
-
-.blog-title > h1 {
-  color: var(--not-so-black);
 }
 
 .blog-info {
@@ -36,8 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin: 0 16px;
 }
 
 .date {
@@ -50,13 +42,8 @@ body {
   justify-content: space-between;
   justify-self: center;
   align-content: center;
-
   width: auto;
   height: 40px;
-}
-
-.share-social > a {
-  align-self: center;
 }
 
 .shrink:hover {
@@ -64,38 +51,23 @@ body {
 }
 
 .share-facebook {
-  transition: background-image 0.2s ease-in-out;
   background-image: url(../images/facebook_circle_color.svg);
-  width: 32px;
-  height: 32px;
 }
 
 .share-pinterest {
-  transition: background-image 0.2s ease-in-out;
   background-image: url(../images/pinterest_circle_color.svg);
-  width: 32px;
-  height: 32px;
 }
 
 .share-linkedin {
-  transition: background-image 0.2s ease-in-out;
   background-image: url(../images/linkedin_circle_color.svg);
-  width: 32px;
-  height: 32px;
 }
 
 .share-email {
-  transition: background-image 0.2s ease-in-out;
   background-image: url(../images/email_circle_color.svg);
-  width: 32px;
-  height: 32px;
 }
 
 .share-twitter {
-  transition: background-image 0.2s ease-in-out;
   background-image: url(../images/twitter_circle_color.svg);
-  width: 32px;
-  height: 32px;
 }
 
 .post-image {
@@ -133,13 +105,7 @@ body {
 
 .image-caption {
   grid-area: cap;
-  color: var(--blue-gray);
-  margin-left: 16px;
-  margin-right: 16px;
-}
-
-.image-caption > p {
-  color: var(--very-deep-blue);
+  margin: 0 16px;
 }
 
 .blog-post {
@@ -150,9 +116,7 @@ body {
   grid-area: nav;
   display: flex;
   justify-content: space-between;
-
-  margin-right: 16px;
-  margin-bottom: 16px;
+  margin: 0 16px 16px 0;
 }
 
 .post-exception {
@@ -175,40 +139,24 @@ body {
   height: auto;
   background-color: var(--not-so-black);
   align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-.about-title > h3 {
-  color: var(--just-another-white);
+  padding: 16px 0;
 }
 
 .author-image {
   background-image: url(../images/donaldo_reyes.jpg);
-  border-radius: 50%;
-  height: 160px;
-  width: 160px;
-  background-size: cover;
-  border: 4px solid var(--blue-gray);
-  margin: 16px;
-}
-
-.author-name > h4 {
-  color: var(--just-another-white);
-}
-
-.author-company > h4 {
-  color: var(--just-another-white);
 }
 
 .author-bio {
-  margin-left: 16px;
-  margin-right: 16px;
+  margin: 0 16px;
   text-align: center;
 }
 
-.author-bio > p {
-  color: var(--just-another-white);
+.subscribe-form {
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 /* ============== Media Queries =============== */
@@ -225,9 +173,7 @@ body {
     "post post post about"
     "nav nav nav about"
     "related related related about";
-  
-    margin-left: 64px;
-    margin-right: 64px;
+    margin: 0 64px;
   }
 
   .blog-info {
@@ -238,7 +184,7 @@ body {
     margin: 0px;
   }
 
-  .share-social > a {
+  .share-icon {
     margin-left: 16px;
   }
 
@@ -251,8 +197,7 @@ body {
   }
   
   .author-bio {
-    margin-left: 32px;
-    margin-right: 32px;
+    margin: 0 32px;
   }
 
   .date {
@@ -272,9 +217,7 @@ body {
     "post post post about"
     "nav nav nav about"
     "related related related about";
-  
-    margin-left: 128px;
-    margin-right: 128px;
+    margin: 0 128px;
   }
 
   .blog-info {
@@ -285,7 +228,7 @@ body {
     margin: 0px;
   }
 
-  .share-social > a {
+  .share-icon {
     margin-left: 16px;
   }
 
@@ -298,8 +241,7 @@ body {
   }
   
   .author-bio {
-    margin-left: 32px;
-    margin-right: 32px;
+    margin: 0 32px;
   }
 
   .date {

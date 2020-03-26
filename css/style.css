@@ -6,6 +6,7 @@
 @import url(colors.css);
 @import url(my-story.css);
 @import url(design-system.css);
+@import url(components.css);
 
 /* ============== Sitewide ============== */
 
@@ -18,15 +19,9 @@
   "sh"
   "main"
   "ft";
-
   height: auto;
   background: var(--light-gray);
   margin: 0;
-}
-
-/* Temporary...delete afterwards */
-.box {
-  border: 1px solid red;
 }
 
 /* ============== Header Grids =============== */
@@ -39,11 +34,8 @@ header {
   grid-template-areas: 
   "mh"
   "mm";
-
   background: var(--very-dark-blue);
-  padding-top: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 16px 16px 0;
 }
 
 .main-header {
@@ -52,7 +44,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   height: 88;
 }
 
@@ -60,15 +51,6 @@ header {
   grid-area: mm;
   display: flex;
   justify-content: center;
-
-  margin: 0;
-  padding: 0;
-}
-
-.main-menu > ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -80,16 +62,12 @@ header {
   flex-direction: row;
   justify-content: space-between;
   justify-self: left;
-
   width: 200px;
   height: 50px;
 }
 
 .linkedin-icon {
-  transition: background-image 0.2s ease-in-out;
   background-image: url(../images/icon_linkedin_circle.png);
-  width: 32px;
-  height: 32px;
 }
 
 .linkedin-icon:hover {
@@ -97,10 +75,7 @@ header {
 }
 
 .instagram-icon {
-  transition: background-image 0.2s ease-in-out;
   background-image: url(../images/icon_instagram_circle.png);
-  width: 32px;
-  height: 32px;
 }
 
 .instagram-icon:hover {
@@ -108,10 +83,7 @@ header {
 }
 
 .twitter-icon {
-  transition: background-image 0.2s ease-in-out;
   background-image: url(../images/icon_twitter_circle.png);
-  width: 32px;
-  height: 32px;
 }
 
 .twitter-icon:hover {
@@ -134,11 +106,7 @@ header {
 
 .menu-item {
   display: inline-block;
-
-  margin-top: 16px;
-  margin-left: 16px;
-  margin-right: 16px;
-  margin-bottom: 8px;
+  margin: 16px 16px 8px;
   text-decoration: none;
 }
 
@@ -153,10 +121,8 @@ header {
   grid-area: sh;
   display: flex;
   flex-direction: column;
-
   background: var(--not-so-black);
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 0 16px;
 }
 
 .subheader-title > h1 {
@@ -170,7 +136,6 @@ footer {
   display: inline-flex;
   flex-direction: row-reverse;
   align-items: flex-end;
-  
   background: var(--very-dark-blue);
   height: 160px;
   width: 100%;
@@ -184,14 +149,11 @@ footer {
 
 @media(min-width:700px) and (max-width:1100px) {
   .header {
-    padding-top: 32px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 32px 32px 0;
   }
 
   .sub-header {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 0 32px;
   }
 
   .main-header {
@@ -220,14 +182,11 @@ footer {
 
 @media (min-width:1101px) {
   .header {
-    padding-top: 32px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 32px 32px 0;
   }
   
   .sub-header {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 0 32px;
   }
 
   .main-header {

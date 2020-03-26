@@ -1,0 +1,122 @@
+/* ============== Icons ============== */
+
+.icon {
+  transition: background-image 0.2s ease-in-out;
+  width: 32px;
+  height: 32px;
+}
+
+/* --------------- Blue Button --------------- */
+
+.share-icon {
+  align-self: center;
+  width: 32px;
+  height: 32px;
+  transition: background-image 0.2s ease-in-out;
+}
+
+/* ============== Main Menu Titles (Buttons) ============== */
+
+.main-menu > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============== Tags ============== */
+
+.single-tag {
+  background-color: var(--violeta);
+  border-radius: 5px;
+  align-content: center;
+  justify-content: center;
+  padding: 0 8px;
+}
+
+.tag-text {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: var(--just-another-white);
+}
+
+/* ============== Buttons ============== */
+
+.btn {
+  display: flex;
+  border-radius: 5px;
+  align-content: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 0 8px;
+  text-decoration: none;
+  height: 32px;
+}
+
+/* --------------- Blue Button --------------- */
+
+.blue-btn {
+  background-color: var(--vivid-blue);
+}
+
+.blue-btn-text {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: var(--very-dark-blue);
+}
+
+.blue-btn:hover {
+  transition: background-color 0.2s ease-in-out;
+  background-color: var(--grass-green);
+}
+
+/* --------------- Yellow Button --------------- */
+
+.yellow-btn {
+  background-color: var(--highlighter-yellow);
+}
+
+.yellow-btn-text {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: var(--very-dark-blue);
+}
+
+.yellow-btn:hover {
+  transition: background-color 0.2s ease-in-out;
+  background-color: var(--just-another-white);
+}
+
+/* ============== Avatar ============== */
+
+.avatar {
+  display: flex;
+  background-size: cover;
+  border: 4px solid var(--blue-gray);
+  border-radius: 50%;
+}
+
+.avatar-large {
+  height: 240px;
+  width: 240px;
+  margin: 32px;
+}
+
+.avatar-medium {
+  height: 160px;
+  width: 160px;
+  margin: 16px;
+}
+
+/* ============== Avatar ============== */
+
+.form-input {
+  height: 32px;
+  width: auto;
+  border-style: none;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  padding: 8px;
+}

@@ -11,8 +11,7 @@ body {
   "dt"
   "explained";
   justify-items: center;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin: 0 16px;
 }
 
 .design-title {
@@ -31,21 +30,16 @@ body {
   border-radius: 10px;
   width: 336px;
   height: 368px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 16px;
+  margin: 0 auto 16px auto;
 }
 
 @media(min-width:700px) and (max-width:1100px) {
   .design-content {
-    margin-left: 64px;
-    margin-right: 64px;
+    margin: 0 64px;
   }
 
   .design-explained {
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 16px;
+    padding: 0 32px 16px 32px;
   }
 
   .figma {
@@ -56,14 +50,11 @@ body {
 
 @media (min-width:1101px) {
   .design-content {
-    margin-left: 128px;
-    margin-right: 128px;
+    margin: 0 128px;
   }
 
   .design-explained {
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 16px;
+    padding: 0 32px 16px 32px;
   }
 
   .figma {

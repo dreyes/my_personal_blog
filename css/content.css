@@ -41,21 +41,6 @@
   height: 32px;
 }
 
-.single-tag {
-  background-color: var(--violeta);
-  border-radius: 5px;
-  align-content: center;
-  justify-content: center;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.single-tag h3 {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  color: var(--just-another-white);
-}
-
 /* ------------ Preview ----------- */
 
 .preview-image {
@@ -73,7 +58,7 @@
   width: 288px;
 }
 
-.post-preview h2 {
+.preview-text {
   color: var(--not-so-black);
   text-align: center;
 }
@@ -82,47 +67,6 @@
   display: flex;
   flex-direction: row-reverse;
   grid-area: rm;
-}
-
-.btn {
-  display: flex;
-  border-radius: 5px;
-  align-content: center;
-  justify-content: center;
-  padding-left: 8px;
-  padding-right: 8px;
-  text-decoration: none;
-  height: 32px;
-}
-
-.blue-btn {
-  background-color: var(--vivid-blue);
-}
-
-.blue-btn h4 {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  color: var(--very-dark-blue);
-}
-
-.blue-btn:hover {
-  transition: background-color 0.2s ease-in-out;
-  background-color: var(--grass-green);
-}
-
-.yellow-btn {
-  background-color: var(--highlighter-yellow);
-}
-
-.yellow-btn h4 {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  color: var(--very-dark-blue);
-}
-
-.yellow-btn:hover {
-  transition: background-color 0.2s ease-in-out;
-  background-color: var(--just-another-white);
 }
 
 /* ---------------- Blog Post Individual Cards --------------- */

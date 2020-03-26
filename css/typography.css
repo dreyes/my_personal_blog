@@ -1,90 +1,56 @@
 @import url(https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&family=Zilla+Slab:ital,wght@1,300&display=swap);
 
+/* Main Menu Item */
 .menu-title {
-  /* Main Menu Item */
-  font-family: Sen;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-
+  /* font: font-style font-variant font-weight font-size/line-height font-family; */
+  font: normal bold 16px/20px Sen;
   display: inline-block;
   align-items: center;
   text-transform: uppercase;
-
   color: var(--vivid-blue);
 }
 
 .subheader-title {
-
-  font-family: Sen;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 48px;
-
+  /* font: font-style font-variant font-weight font-size/line-height font-family; */
+  font: normal 800 40px/48px Sen;
+  text-decoration: underline wavy;
   display: flex;
   align-items: center;
-
   color: var(--just-another-white);
 }
 
 .subheader-subtitle {
-
-  font-family: Sen;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 40px;
-
+  /* font: font-style font-variant font-weight font-size/line-height font-family; */
+  font: bold 32px/40px Sen;
   display: flex;
   align-items: center;
-
   color: var(--just-another-white);
 }
 
 h1 {
   /* Header 1 */
-
-  font-family: Sen;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 48px;
-
+  /* font: font-style font-variant font-weight font-size/line-height font-family; */
+  font: normal 800 40px/48px Sen;
   display: flex;
   align-items: center;
-
   color: var(--not-so-black);
 }
 
 h2 {
   /* Header 2 */
-
-  font-family: Sen;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 40px;
-
+  /* font: font-style font-variant font-weight font-size/line-height font-family; */
+  font: normal bold 32px/40px Sen;
   display: flex;
   align-items: center;
-
   color: var(--not-so-black);
 }
 
 h3 {
   /* Header 3 */
-
-  font-family: Sen;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
-  
+  /* font: font-style font-variant font-weight font-size/line-height font-family; */
+  font: normal bold 24px/30px Sen;
   display: flex;
   align-items: center;
-
   margin-top: 0;
   margin-bottom: 8px;
   color: var(--not-so-black);
@@ -92,64 +58,44 @@ h3 {
 
 h4 {
   /* Header 4 */
-  font-family: Sen;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-
+  /* font: font-style font-variant font-weight font-size/line-height font-family; */
+  font: normal normal 16px/20px Sen;
   display: flex;
   align-items: center;
   text-transform: uppercase;
   margin: 0;
-
   color: var(--not-so-black);
 }
 
 .body-large {
   /* Body Large */
-
-  font-family: Sen;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 30px;
+  /* font: font-style font-variant font-weight font-size/line-height font-family; */
+  font: normal normal 24px/30px Sen;
   align-items: center;
   color: var(--not-so-black);
 }
 
 .body-medium {
   /* Body Medium */
-
-  font-family: Sen;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
+  /* font: font-style font-variant font-weight font-size/line-height font-family; */
+  font: normal normal 18px/22px Sen;
   align-items: center;
   color: var(--not-so-black);
 }
 
 .body-small {
-  font-family: Sen;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
+  /* font: font-style font-variant font-weight font-size/line-height font-family; */
+  font: normal normal 16px/20px Sen;
   align-items: center;
   color: var(--not-so-black);
 }
 
 .body-xs {
   /* Body XS */
-  font-family: Sen;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
+  /* font: font-style font-variant font-weight font-size/line-height font-family; */
+  font: normal normal 14px/18px Sen;
   align-items: center;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin: 8px 0;
   color: var(--not-so-black);
 }
 
@@ -157,24 +103,29 @@ h4 {
   text-align: justify;
 }
 
+/* Quote */
 blockquote {
-  /* Quote */
-  font-family: Zilla Slab;
-  font-style: italic;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 30px;
+  /* font: font-style font-variant font-weight font-size/line-height font-family; */
+  font: italic 300 24px/30px Zilla Slab;
   display: flex;
   align-items: center;
   color: var(--not-so-black);
-}
-
-.green-font {
-  color: var(--grass-green);
 }
 
 .footer-font {
   font-size: 14px;
   line-height: 20px;
   color: var(--just-another-white);
+}
+
+.white-txt {
+  color: var(--just-another-white)
+}
+
+.blue-txt {
+  color: var(--blue-gray)
+}
+
+.green-txt {
+  color: var(--grass-green);
 }
