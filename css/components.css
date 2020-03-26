@@ -6,7 +6,7 @@
   height: 32px;
 }
 
-/* --------------- Blue Button --------------- */
+/* --------------- Share Button --------------- */
 
 .share-icon {
   align-self: center;
@@ -110,7 +110,7 @@
   margin: 16px;
 }
 
-/* ============== Avatar ============== */
+/* ============== Form Input ============== */
 
 .form-input {
   height: 32px;
